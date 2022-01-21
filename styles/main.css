@@ -323,7 +323,7 @@ footer {
     footer {
         height: auto;
         padding: 2em;
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 3em;
     }
 }
