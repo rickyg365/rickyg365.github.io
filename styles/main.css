@@ -3,9 +3,8 @@
     --secondary-clr: rgb(218, 192, 122);
 }
 
-
 * {
-    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 
@@ -42,6 +41,9 @@ ul {
 header {
     background: var(--bkg-body);
     /* background: gold; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* NavBar */
@@ -52,41 +54,37 @@ header {
     /* padding: 10px; */
     height: 64px;
     width: 100%;
+    max-width: 980px;
 
     display: flex;
     /* gap: 1rem; */
     align-items: center;
     justify-content: space-between;
-
 }
 
 .logo-img {
-    padding-left: 3rem;
+    padding-left: 2rem;
     color: white;
     min-width: 240px;
     height: 100%;
     font-weight: 600;
     font-size: 1.3rem;
-    
 }
 
 .nav-list {
-    padding-right: 3rem;
+    padding-right: 2rem;
     height: 100%;
 
     display: flex;
-    gap: 2.5em;
+    gap: 1rem;
     align-items: center;
     justify-content: space-between;
 
     list-style: none;
 }
 
-
-.nav-list>li {
-    
+.nav-list > li {
 }
-
 
 .nav-item {
     width: 100%;
@@ -109,7 +107,6 @@ header {
     color: var(--bkg-body);
 
     border-radius: 16px;
-    
 }
 
 @media screen and (max-width: 700px) {
@@ -134,7 +131,7 @@ header {
     }
     .nav-list {
         /* 2 States */
-        
+
         /* Hidden */
         visibility: hidden;
         height: 0;
@@ -143,11 +140,8 @@ header {
         /* Visible */
         /* width: 100%; */
 
-
-
         gap: 1.5em;
         padding: 0;
-
     }
     .nav-item {
         /* flex-direction: column;
@@ -156,11 +150,12 @@ header {
         font-weight: 600;
     }
 }
-@media screen and (max-width: 200px) {
+@media screen and (max-width: 700px) {
     .nav-bar {
         padding: 0;
         margin: 0;
         width: 100vw;
+        flex-direction: column;
     }
 }
 
@@ -170,7 +165,7 @@ header {
     /* height:80vh; */
     padding: 7em 3em 4em 3em;
     gap: 1.5em;
-    
+
     /* background: var(--bkg-body) */
 }
 
@@ -178,7 +173,7 @@ header {
     /* background: chartreuse; */
 }
 
-.profile-pic>img {
+.profile-pic > img {
     width: 35%;
     height: auto;
     border-radius: 50%;
@@ -189,7 +184,7 @@ header {
     color: white;
     text-align: center;
     margin: 0;
-    
+
     /* gap: .5em; */
 }
 
@@ -203,9 +198,9 @@ header {
     font-weight: 500;
     /* text-justify: left; */
     white-space: pre;
- 
+
     width: 400px;
-    padding-top: .25em;
+    padding-top: 0.25em;
     padding-bottom: 2em;
 }
 
@@ -223,13 +218,13 @@ header {
         padding-top: 1em;
     }
     .profile-text {
-        width: 80vw;
+        width: 90vw;
     }
     .profile-tags {
-        max-width: 80vw;
+        max-width: 90vw;
     }
     .profile-details {
-        max-width: 80vw;
+        max-width: 90vw;
     }
 }
 
@@ -237,25 +232,37 @@ header {
 
 main {
     /* background: var(--bkg-body); */
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 section {
-    padding: 5em 1em;
+    padding: 4em 1em;
+    width: 100%;
+    max-width: 980px;
 }
 
 .main-links {
     list-style: none;
 
-
     height: 100%;
     width: 100%;
 
     display: flex;
-    gap: 3.5em;
+    gap: 2.5em;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+}
+
+.main-links > li {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .link-item {
@@ -267,7 +274,9 @@ section {
 
     /* padding: 0 2em; */
     height: 64px;
-    min-width: 320px;
+
+    width: 100%;
+    max-width: 480px;
 
     font-weight: 600;
 
@@ -281,7 +290,7 @@ section {
     color: var(--secondary-clr);
     background: var(--bkg-body);
     /* border: 5px solid white; */
-    
+
     box-shadow: 3px 3px 3px rgb(164, 164, 164);
 }
 
@@ -295,7 +304,6 @@ footer {
     gap: 10em;
     align-items: center;
     justify-content: center;
-    
 }
 
 .foot-link {
@@ -305,10 +313,9 @@ footer {
 
     display: flex;
     flex-direction: column;
-    gap: .25em;
+    gap: 0.25em;
     align-items: center;
     justify-content: center;
-
 }
 
 .foot-link:visited {
@@ -328,9 +335,7 @@ footer {
     }
 }
 
-
-
- /* EXPERIMENTAL
+/* EXPERIMENTAL
 .border-gradient {
     border: 5px solid;
     border-radius: 16px;
