@@ -219,7 +219,6 @@ footer {
     position: relative;
     /* filter: grayscale(); */
     pointer-events: none;
-
     /* color: rgba(0, 0, 0, 0); */
     color: rgba(0, 0, 0, 0.7);
     background: rgba(0, 0, 0, 0.25);
