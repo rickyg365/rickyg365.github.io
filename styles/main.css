@@ -2,7 +2,7 @@
     /* --bkg-body: #0f263b;
     --secondary-clr: rgb(218, 192, 122); */
     --bkg-body: #003b5c;
-    --secondary-clr: rgb(231, 195, 97);
+    --secondary-clr: #fce25b;
 }
 
 * {
@@ -145,7 +145,8 @@ section {
 }
 
 .main-links > li {
-    width: 100%;
+    /* width: 100%; */
+    position: relative;
     height: 64px;
 
     display: flex;
@@ -154,19 +155,22 @@ section {
 }
 
 .link-item {
+    transition: 250ms;
     text-align: center;
-    color: var(--bkg-body);
+    color: white;
+    /* color: var(--secondary-clr); */
     /* background-color: white; */
-    background: var(--secondary-clr);
+    background: var(--bkg-body);
     overflow: hidden;
     text-decoration: none;
 
     background-clip: border-box;
 
-    width: 100%;
+    width: 400px;
     max-width: 400px;
     height: 100%;
 
+    font-size: 1.4rem;
     font-weight: 600;
 
     border-radius: 16px;
@@ -176,8 +180,8 @@ section {
 }
 
 .link-item:hover {
-    color: var(--secondary-clr);
-    background: var(--bkg-body);
+    color: var(--bkg-body);
+    background: var(--secondary-clr);
     /* border: 5px solid white; */
 
     box-shadow: 3px 3px 3px rgb(164, 164, 164);
@@ -217,12 +221,56 @@ footer {
 
 .coming-soon {
     position: relative;
+    perspective: "3d";
     /* filter: grayscale(); */
     pointer-events: none;
     /* color: rgba(0, 0, 0, 0); */
 
-    color: rgba(0, 0, 0, 0.7);
-    background: rgba(0, 0, 0, 0.25);
+    /* color: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.25); */
+    color: rgb(0, 0, 0);
+    background: rgb(204, 204, 204);
+}
+
+.outer-link-container::before {
+    content: "Coming Soon";
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    z-index: -10;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 15px;
+
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    background: rgb(255, 44, 44);
+}
+
+/* .main-links > li */
+/* .outer-link-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+/* background: lightgreen;
+} */
+
+.outer-link-container:hover .coming-soon {
+    color: rgb(0, 0, 0);
+    background: rgb(204, 204, 204);
+    transition: 300ms ease-in-out;
+    transform: rotateX(75deg) translateX(5px) translateY(5px) translateZ(38px);
+}
+
+.outer-link-container:hover::before {
+    opacity: 1;
+    transform: scale(0.99);
 }
 
 .coming-soon::after {
