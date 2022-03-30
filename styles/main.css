@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
 
-    line-height: 1.3;
+    line-height: 1.4;
 
     box-sizing: border-box;
 }
@@ -48,8 +48,8 @@ header {
 
 .profile-container {
     /* height:80vh; */
-    padding: 7em 3em 4em 3em;
-    gap: 3rem;
+    padding: 6em 3em 4rem 3em;
+    gap: 2rem;
 
     /* background: var(--bkg-body) */
 }
@@ -61,6 +61,7 @@ header {
 .profile-pic > img {
     width: 35%;
     height: auto;
+    margin: 0 auto;
     border-radius: 50%;
 }
 
@@ -77,11 +78,12 @@ header {
 
 .profile-name {
     /* text-justify: left; */
-    font-size: 2em;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
 .profile-tags {
+    font-size: 1.2rem;
     font-weight: 500;
     /* text-justify: left; */
     /* white-space: pre; */
@@ -92,19 +94,23 @@ header {
 }
 
 .profile-details {
+    /* Move this to about and have the home page look cleaner */
+    font-size: 1rem;
+    font-weight: 400;
     /* text-justify: left; */
     text-align: center;
     /* text-overflow: clip;  */
     overflow: hidden;
-    width: 400px;
+    margin: 0 auto;
+    width: min(470px, 100%);
 }
 
 @media screen and (max-width: 500px) {
     .profile-container {
-        padding: 2rem 0 1rem 0rem;
+        padding: 4rem 2rem 4rem 2rem;
     }
     .profile-text {
-        width: 90vw;
+        width: 100%;
     }
     .profile-tags {
         max-width: 90vw;
@@ -118,7 +124,7 @@ header {
 /* Main Content */
 
 main {
-    /* background: var(--bkg-body); */
+    background: var(--bkg-body);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,7 +132,7 @@ main {
 }
 
 section {
-    padding: 4em 1em;
+    padding: 2rem 1rem;
     width: 100%;
     max-width: 980px;
 }
@@ -138,7 +144,7 @@ section {
     width: 100%;
 
     display: flex;
-    gap: 2.5em;
+    gap: 1rem;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -157,17 +163,16 @@ section {
 .link-item {
     transition: 250ms;
     text-align: center;
-    color: white;
+    background: var(--secondary-clr);
     /* color: var(--secondary-clr); */
     /* background-color: white; */
-    background: var(--bkg-body);
+    color: var(--bkg-body);
     overflow: hidden;
     text-decoration: none;
+    /* 
+    background-clip: border-box; */
 
-    background-clip: border-box;
-
-    width: 400px;
-    max-width: 400px;
+    width: 470px;
     height: 100%;
 
     font-size: 1.4rem;
@@ -175,16 +180,16 @@ section {
 
     border-radius: 16px;
     /* border: 5px solid var(--secondary-clr); */
-
-    box-shadow: 3px 3px 3px rgb(164, 164, 164);
+    /* 
+    box-shadow: 3px 3px 3px rgb(164, 164, 164); */
 }
 
 .link-item:hover {
-    color: var(--bkg-body);
-    background: var(--secondary-clr);
+    /* color: var(--bkg-body);
+    background: white; */
     /* border: 5px solid white; */
 
-    box-shadow: 3px 3px 3px rgb(164, 164, 164);
+    box-shadow: 0px 5px 0px 0px rgb(255, 30, 30);
 }
 
 /* Footer */
@@ -211,6 +216,10 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+    .link-item {
+        width: min(470px, 90vw);
+        margin: 0 1rem;
+    }
     footer {
         height: auto;
         padding: 2em;
@@ -232,7 +241,7 @@ footer {
     background: rgb(204, 204, 204);
 }
 
-.outer-link-container::before {
+/* .outer-link-container::before {
     content: "Coming Soon";
 
     display: flex;
@@ -251,7 +260,7 @@ footer {
     font-weight: 600;
     color: white;
     background: rgb(255, 44, 44);
-}
+} */
 
 /* .main-links > li */
 /* .outer-link-container {
@@ -268,10 +277,10 @@ footer {
     transform: rotateX(75deg) translateX(5px) translateY(5px) translateZ(38px);
 }
 
-.outer-link-container:hover::before {
+/* .outer-link-container:hover::before {
     opacity: 1;
     transform: scale(0.99);
-}
+} */
 
 .coming-soon::after {
     width: 20%;
