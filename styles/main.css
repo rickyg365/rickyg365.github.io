@@ -48,7 +48,7 @@ header {
 
 .profile-container {
     /* height:80vh; */
-    padding: 6em 3em 4rem 3em;
+    padding: 6em 3em 2rem 3em;
     gap: 2rem;
 
     /* background: var(--bkg-body) */
@@ -71,15 +71,17 @@ header {
     /* text-align: center; */
     margin: 0;
     width: 100%;
-    max-width: 480px;
+    max-width: 470px;
 
     /* gap: .5em; */
 }
 
 .profile-name {
+    text-align: center;
     /* text-justify: left; */
     font-size: 2.5rem;
     font-weight: 700;
+    width: 100%;
 }
 
 .profile-tags {
@@ -90,10 +92,11 @@ header {
 
     width: 100%;
     padding-top: 0.5em;
-    padding-bottom: 1.5em;
+    padding-bottom: 2rem;
 }
 
 .profile-details {
+    color: var(--secondary-clr);
     /* Move this to about and have the home page look cleaner */
     font-size: 1rem;
     font-weight: 400;
@@ -132,7 +135,7 @@ main {
 }
 
 section {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     width: 100%;
     max-width: 980px;
 }
