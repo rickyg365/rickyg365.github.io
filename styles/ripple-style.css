@@ -1,0 +1,46 @@
+button {
+    position: relative;
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+    transition: all 0.3s ease-in-out;
+
+    overflow: hidden;
+    cursor: pointer;
+}
+
+button .ripple {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 8rem;
+    height: 8rem;
+
+    border-radius: 50%;
+    background-color: lightcoral;
+
+    opacity: 0;
+    pointer-events: none;
+    transform-origin: 0% 0%;
+
+    animation-timing-function: infinite;
+    animation: rippleAnimation 1.25s;
+}
+
+@keyframes rippleAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) translate(-50%, -50%);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2) translate(-50%, -50%);
+    }
+}

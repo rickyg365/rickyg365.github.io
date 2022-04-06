@@ -182,6 +182,8 @@ section {
     font-weight: 600;
 
     border-radius: 16px;
+    box-shadow: 0 1rem 2.5rem -1rem rgba(0, 0, 0, 0.3);
+
     /* border: 5px solid var(--secondary-clr); */
     /* 
     box-shadow: 3px 3px 3px rgb(164, 164, 164); */
@@ -192,9 +194,12 @@ section {
     background: white; */
     /* border: 5px solid white; */
 
-    box-shadow: 0px 5px 0px 0px rgb(255, 30, 30);
+    box-shadow: 5px 5px 0px 0px rgb(255, 30, 30);
 }
 
+#ripple-btn {
+    pointer-events: all;
+}
 /* Footer */
 footer {
     height: 128px;
@@ -242,6 +247,10 @@ footer {
     background: rgba(0, 0, 0, 0.25); */
     color: rgb(0, 0, 0);
     background: rgb(204, 204, 204);
+}
+
+.disable {
+    pointer-events: none;
 }
 
 /* .outer-link-container::before {
