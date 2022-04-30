@@ -8,8 +8,9 @@
     - #A4B8C4
     - #8A95A5
     - #e87361ac
+    - #c62525b5
     */
-    --bkg-body: #a4b8c4;
+    --bkg-body: #c62525b5;
     --primary-clr: #003e62;
     --secondary-clr: #fce25b;
     --coming-soon-banner-clr: #f7717d;
@@ -44,9 +45,12 @@
 }
 
 /* General Classes */
+html {
+    background-color: var(--bkg-body);
+}
 
 header {
-    background: var(--bkg-body);
+    /* background: var(--bkg-body); */
 
     display: flex;
     flex-direction: column;
@@ -67,6 +71,7 @@ header {
 
 .profile-pic > img {
     width: 30%;
+    min-width: 200px;
     height: auto;
 
     aspect-ratio: 1/1;
@@ -144,12 +149,12 @@ header {
 
     width: min(470px, 100%);
 
-    border-radius: 50px;
+    border-radius: 30px;
     border: 1px solid var(--primary-clr);
 
     overflow: hidden;
 
-    transition: 1000ms;
+    box-shadow: -2px 4px 0px 0px var(--primary-clr);
 }
 
 @media screen and (max-width: 500px) {
@@ -179,7 +184,7 @@ main {
     align-items: center;
     justify-content: center;
 
-    background: var(--bkg-body);
+    /* background: var(--bkg-body); */
 }
 
 section {
@@ -269,7 +274,7 @@ footer {
     align-items: center;
     justify-content: center;
 
-    background: var(--bkg-body);
+    /* background: var(--bkg-body); */
 }
 .foot-container {
     font-size: 1.1rem;
