@@ -214,15 +214,41 @@ footer {
     padding: 10px 0;
 }
 
+#hamburger-menu {
+}
+
+.hidden {
+    display: none;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 645px) {
-    .custom-width {
+    /* .custom-width {
         width: 100%;
+    } */
+
+    header {
+        padding: 5px 0px;
+    }
+
+    .logo {
+        padding: 0 1rem;
+    }
+    .nav-list {
+        padding: 0 1rem;
+    }
+
+    main {
+        padding: 10px 1rem;
     }
 
     /* Welcome */
     .welcome-txt {
         width: 100%;
+        padding: 0 1rem;
+    }
+    .links-wrap {
+        padding: 2rem 1rem;
     }
 
     /* Main */
@@ -235,11 +261,14 @@ footer {
     }
 
     /* Footer */
+    footer {
+        padding: 1rem 0;
+    }
     .social-wrapper {
-        padding: 20px 0;
+        padding: 1rem 0;
 
         width: 100%;
-
+        gap: 1rem;
         align-items: center;
     }
 
@@ -247,5 +276,8 @@ footer {
         width: 100%;
 
         justify-content: center;
+    }
+    .copyright {
+        padding: 0 0 1rem 0;
     }
 }
