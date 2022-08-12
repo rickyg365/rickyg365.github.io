@@ -1,3 +1,3 @@
 # Personal Website
-a static website, serving inks to some of my other social media and resources.
+a static website, serving links to some of my other social media and resources.
 
