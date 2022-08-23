@@ -230,6 +230,9 @@ footer {
     header {
         padding: 5px 0px;
     }
+    .header-wrap {
+        padding: 0 1rem;
+    }
 
     .logo {
         padding: 0 1rem;
@@ -249,6 +252,7 @@ footer {
     }
     .links-wrap {
         padding: 2rem 1rem;
+        gap: 22px;
     }
 
     /* Main */
@@ -257,7 +261,7 @@ footer {
         width: 100%;
         height: unset;
 
-        padding: 0.75rem 0;
+        padding: 1rem 0;
     }
 
     /* Footer */
@@ -276,6 +280,10 @@ footer {
         width: 100%;
 
         justify-content: center;
+    }
+    .icon {
+        width: 2rem;
+        height: 2rem;
     }
     .copyright {
         padding: 0 0 1rem 0;
