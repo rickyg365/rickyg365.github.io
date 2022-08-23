@@ -157,12 +157,15 @@ ul {
 
     border-radius: 8px;
     border: 2px solid var(--primary-clr);
-}
 
-.main-link:hover {
-    color: var(--primary-clr);
     box-shadow: -1px 2px 0px 0px var(--primary-clr);
     transform: translate(1px, -2px);
+}
+
+.main-link:active {
+    color: var(--primary-clr);
+    box-shadow: unset;
+    transform: translate(-1px, 2px);
 }
 
 /* Footer */
@@ -189,7 +192,7 @@ footer {
     width: 35%;
 
     display: flex;
-    gap: 22px;
+    gap: 16px;
     flex-direction: column;
 }
 
@@ -197,7 +200,7 @@ footer {
     padding: 0px 4px;
 
     display: flex;
-    gap: 24px;
+    gap: 22px;
     align-items: center;
 }
 
