@@ -222,7 +222,7 @@ footer {
 }
 
 .copyright {
-    padding: 0;
+    padding: 1rem;
     font-size: 14px;
     color: #464646;
 }
@@ -266,7 +266,7 @@ footer {
         padding: 0 1rem;
     }
     .links-wrap {
-        padding: 2rem 1rem;
+        padding: 2rem 1rem 4rem 1rem;
         gap: 22px;
     }
 
@@ -281,7 +281,7 @@ footer {
 
     /* Footer */
     footer {
-        padding: 1rem;
+        padding: 0;
     }
     .footer-wrap {
         padding: 0;
@@ -300,6 +300,6 @@ footer {
         justify-content: center;
     }
     .copyright {
-        padding: 8px 0 8px 0;
+        padding: 1.2rem 0;
     }
 }
