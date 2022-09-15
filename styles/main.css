@@ -18,6 +18,7 @@
 }
 
 body {
+    min-height: 100vh;
 }
 
 header {
@@ -26,6 +27,7 @@ header {
 }
 
 main {
+    min-height: calc(100vh - 160px);
     padding: 20px 1rem;
 }
 
@@ -204,7 +206,7 @@ ul {
 }
 
 .links-wrap {
-    padding-top: 60px;
+    padding: 80px 0;
 
     display: flex;
     gap: 2rem;
@@ -231,7 +233,7 @@ ul {
     color: var(--primary-clr);
     /* background: lightslategray; */
 
-    border-radius: 5px;
+    border-radius: 8px;
     border: 2px solid var(--primary-clr);
 
     box-shadow: -1px 2px 0px 0px var(--primary-clr);
