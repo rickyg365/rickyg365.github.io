@@ -27,7 +27,7 @@ header {
 }
 
 main {
-    min-height: calc(100vh - 160px);
+    min-height: calc(100vh - 180px);
     padding: 20px 1rem;
 }
 
@@ -80,7 +80,7 @@ a {
     justify-content: space-between;
 
     /* background-color: lightblue; */
-    border-bottom: 1px solid var(--primary-clr);
+    /* border-bottom: 1px solid var(--primary-clr); */
 }
 
 .logo {
@@ -262,7 +262,7 @@ footer {
     justify-content: flex-start;
 
     /* background-color: lightgoldenrodyellow; */
-    border-top: 1px solid var(--primary-clr);
+    /* border-top: 1px solid var(--primary-clr); */
 }
 
 .social-wrapper {
@@ -305,21 +305,20 @@ footer {
 
     header {
         padding: 0;
-        padding-top: 4px;
     }
     .header-wrap {
-        padding: 0 1rem;
+        padding: 0.5rem;
     }
 
     .logo {
-        padding: 0 1rem;
+        padding: 0 0.5rem;
     }
     .nav-list {
         padding: 0 1rem;
     }
 
     main {
-        padding: 10px 1rem;
+        padding: 10px 0.5rem;
     }
 
     /* Welcome */
@@ -329,10 +328,10 @@ footer {
     }
     .welcome-txt {
         width: 100%;
-        padding: 0 1rem;
+        padding: 0 0.5rem;
     }
     .links-wrap {
-        padding: 2rem 1rem 4rem 1rem;
+        padding: 2rem 0.5rem;
         gap: 22px;
     }
 
