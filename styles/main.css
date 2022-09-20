@@ -181,7 +181,7 @@ ul {
 .welcome-wrap {
     font-size: 1.1rem;
 
-    padding: 2rem 0 1rem 0;
+    padding: 48px 0 20px 0;
 
     display: flex;
 
@@ -193,8 +193,9 @@ ul {
 }
 
 .welcome-txt {
-    padding: 0 1rem 0 0;
-    width: 50%;
+    padding: 0 1rem;
+    width: 80%;
+    /* max-width: 40ch; */
     /* background-color: lightblue; */
 }
 
